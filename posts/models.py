@@ -20,7 +20,7 @@ class Post(models.Model):
         Group, related_name='posts', null=True, blank=True, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.message
+        return f'{self.message[:10]}  - | -  {self.created_at.strftime("%Y/%m/%d at %H:%M")}'
 
     def save(self, *args, **kwargs):
         self.message_html = misaka.html(self.message)
