@@ -14,7 +14,7 @@ body {
 
 #note {
   position: absolute;
-  color: rgba(249,241,204,1);
+  color: #191063;
   left: 0;
   right: 0;
   bottom: 20px;
@@ -24,6 +24,3 @@ body {
   font-family: Arial;
 }
 
-h1:hover{
-  background-color:#191063;
-}
